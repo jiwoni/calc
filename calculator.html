@@ -15,24 +15,63 @@
    
    <script src="js/calculator.js"></script>
    <script>
-
- 
-   var input = 0;
-   input = prompt('Message');
-  
-   fn_inputUser(input);
-
-   /*
-
+  /*
+   <API INFO>
    fn_inputUser ()
       input : String input
       output : Object calcPostfix 
 
    */
-
+ 
+   let input = 0;
+   let rst = '';
+  
+   //아래 코드는 처음 초기화를 위해 처음 한번은 실행되야함 
+   rst += input;
+   console.log("first rst : " + rst);
 
    </script>
 
  </body>
+ <table border="1">
+    <tr>
+        <td colspan="4">
+            <input type="text" id="display">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <input type="text" id="result">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">AC</td>
+        <td onclick="fn_inputUser('/')">/</td>
+    </tr>
+    <tr>
+        <td onclick="fn_inputUser(7)">7</td>
+        <td onclick="fn_inputUser(8)">8</td>
+        <td onclick="fn_inputUser(9)">9</td>
+        <td onclick="fn_inputUser('*')">*</td>
+    </tr>
+    <tr>
+        <td onclick="fn_inputUser(4)">4</td>
+        <td onclick="fn_inputUser(5)">5</td>
+        <td onclick="fn_inputUser(6)">6</td>
+        <td onclick="fn_inputUser('-')">-</td>
+    </tr>
+    <tr>
+        <td onclick="fn_inputUser(1)">1</td>
+        <td onclick="fn_inputUser(2)">2</td>
+        <td onclick="fn_inputUser(3)">3</td>
+        <td onclick="fn_inputUser('+')">+</td>
+    </tr>
+    <tr>
+        <td colspan="2" onclick="fn_inputUser(0)">0</td>
+        <td onclick="fn_inputUser('.')">.</td>
+        <td onclick="fn_inputUser('=')">=</td>
+    </tr>
+</table>
+
 
 </html>

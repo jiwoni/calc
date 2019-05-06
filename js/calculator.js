@@ -144,18 +144,14 @@ try {
 }
 
 function fn_inputUser(input){
-    var init = 0;
-    var rst = 0;
-    
-    rst += input;
-    console.log("first rst : " + rst);
-
-    while (input != "=") //012-+2*3 -> 012+2*3
+  
+    //while, prompt 제거 
+    if (input != "=") //012-+2*3 -> 012+2*3
      {        
-            input = prompt('Message'); //Prompt(입력)창 - Prompt함수는 사용자에게 입력값을 받을 수 있는 창을 띄워주는 함수. 사용자에게 받은 값을 String타입의 리턴값으로 반환해주며 입력값이 없을경우에는 Null값을 리턴.
-            console.log("input : " + input);
+            //input = prompt('Message'); //Prompt(입력)창 - Prompt함수는 사용자에게 입력값을 받을 수 있는 창을 띄워주는 함수. 사용자에게 받은 값을 String타입의 리턴값으로 반환해주며 입력값이 없을경우에는 Null값을 리턴.
+            //console.log("input : " + input);
 
-            var lastChar = rst.charAt(rst.length-1); //문자열의 마지막 문자 가져오기 
+            let lastChar = rst.charAt(rst.length-1); //문자열의 마지막 문자 가져오기 
             console.log("lastChar : " + lastChar);
         
 
